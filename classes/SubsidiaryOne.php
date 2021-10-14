@@ -15,7 +15,7 @@
 class SubsidiaryOne extends Parental
 
 {
-    public  $numberSubsid1=4;
+    public  $numberSubsid1;
 
     public function __construct($number,$number2,$numberSubsid1)
     {
@@ -24,9 +24,9 @@ class SubsidiaryOne extends Parental
         $this->numberSubsid1=$numberSubsid1;
     }
 
-    public function getSupplement($number,$number2,$numberSubsid1)
+    public function getSupplement()
     {
-        $sum=$number+$number2+$numberSubsid1;
+        $sum=$this->number+$this->number2+$this->numberSubsid1;
         return $sum;
     }
 
