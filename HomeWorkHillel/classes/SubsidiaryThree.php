@@ -16,7 +16,7 @@
  class SubsidiaryThree extends Parental
 
 {
-    public $numberSubsid3=3;
+    public $numberSubsid3;
 
 
     public function __construct($number, $number2,$numberSubsid3)
@@ -25,13 +25,13 @@
         $this->numberSubsid3=$numberSubsid3;
     }
 
-      public function getDivision($number,$number2,$numberSubsid3)
+      public function getDivision()
   {
-      $division=($number/$number2)/$numberSubsid3;
+      $division=($this->number/$this->number2)/$this->numberSubsid3;
       return $division;
   }
 
-   /* abstract public function Exponentiation()
+    /*abstract public function Exponentiation()
     {
 
     }*/

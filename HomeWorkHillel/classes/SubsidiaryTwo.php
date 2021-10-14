@@ -12,10 +12,10 @@
 //
 //Один из наследников должен содержать абстрактную функцию возведения в степень
 
-class SubsidiaryTwo extends Parental
+final class SubsidiaryTwo extends Parental
 
 {
-    public $numberSubsid2=63;
+    public $numberSubsid2;
 
     public function __construct($number, $number2,$numberSubsid2)
     {
@@ -23,9 +23,9 @@ class SubsidiaryTwo extends Parental
         $this->numberSubsid2=$numberSubsid2;
     }
 
-     public function getMultiplication($number,$number2,$numbersubsid2)
+     public function getMultiplication()
  {
-     $multiplication=$number*$number2*$numbersubsid2;
+     $multiplication=$this->number*$this->number2*$this->numberSubsid2;
      return $multiplication;
  }
 

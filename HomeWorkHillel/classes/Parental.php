@@ -8,8 +8,8 @@
 class Parental
 
 {
-    public $number = 100;
-    public $number2 = 25;
+    public $number;
+    public $number2;
 
     public  function __construct($number,$number2)
     {
@@ -19,27 +19,37 @@ class Parental
 
 //    abstract public function Exponentiation();
 
-    public function getNumber()
+    /**
+     * @return int
+     */
+    public function getNumber(): int
     {
         return $this->number;
     }
 
-
-    public function getNumber2()
-    {
-        return $this->number2;
-    }
-
-
-    public function setNumber($number)
+    /**
+     * @param int $number
+     */
+    public function setNumber(int $number): void
     {
         $this->number = $number;
     }
 
+    /**
+     * @return int
+     */
+    public function getNumber2(): int
+    {
+        return $this->number2;
+    }
 
-    public function setNumber2($number2)
+    /**
+     * @param int $number2
+     */
+    public function setNumber2(int $number2): void
     {
         $this->number2 = $number2;
     }
+
 
 }
